@@ -24,10 +24,10 @@ namespace SimpEngineLib
 			std::wstring boxText = TEXT("Error! Result : ");
 			boxText.append(resultName);
 
-			const TCHAR* text = boxText.c_str();
+			const TCHAR* errorMsg = boxText.c_str();
 			const TCHAR* caption = TEXT("Error!");
 
-			MessageBox(NULL, text, caption, MB_OK);
+			MessageBox(NULL, errorMsg, caption, MB_OK);
 
 			__debugbreak();
 		}

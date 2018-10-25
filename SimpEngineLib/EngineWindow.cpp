@@ -3,6 +3,7 @@
 
 namespace SimpEngineLib
 {
+	
 	EngineWindow::EngineWindow()
 	{
 	}
@@ -22,8 +23,11 @@ namespace SimpEngineLib
 
 	SimpResult EngineWindow::ShowWindow(const int width, const int height)
 	{
-
-
 		return SimpResult::None;
+	}
+
+	void EngineWindow::Update(const float dt)
+	{
+
 	}
 }

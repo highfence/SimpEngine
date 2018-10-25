@@ -2,12 +2,10 @@
 
 namespace SimpEngineLib
 {
-
 	class InputLayer
 	{
 	public:
 		InputLayer();
 		~InputLayer();
 	};
-
 }

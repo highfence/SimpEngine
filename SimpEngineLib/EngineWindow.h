@@ -11,6 +11,8 @@ namespace SimpEngineLib
 		SimpResult InitWindow(HINSTANCE windowInstance, int cmdShow);
 		SimpResult ShowWindow(const int width, const int height);
 
+		void Update(const float dt);
+
 	private :
 
 		HINSTANCE m_WindowInst;

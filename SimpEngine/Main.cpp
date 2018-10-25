@@ -5,8 +5,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdPa
 {
 	using namespace SimpEngineLib;
 
-	SimpEngine a;
-	a.InitEngine(hInstance, nCmdShow);
+	SimpEngine engineInstance(hInstance, nCmdShow);
+	engineInstance.InitEngine();
 
 	return 0;
 }

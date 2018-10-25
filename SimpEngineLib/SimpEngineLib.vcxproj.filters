@@ -1,66 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="소스 파일">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Rendering">
+      <UniqueIdentifier>{78c93480-e827-42dd-ae89-fef69a377d62}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{0b155db7-3bb5-47e2-842b-593990275c46}</UniqueIdentifier>
     </Filter>
-    <Filter Include="리소스 파일">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Core">
+      <UniqueIdentifier>{c6b96655-e9b4-4579-a661-19afc11290e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{5f138e30-66d2-4afa-8ce4-48dcd994dac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{e382e057-55f4-4a0a-811e-083fdf90ac0e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="SimpEngine.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="InputLayer.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Result.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="Timer.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="EngineWindow.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="SimpEngine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="InputLayer.h">
+      <Filter>Input</Filter>
     </ClInclude>
     <ClInclude Include="DebugHelper.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Result.h">
+      <Filter>Utils</Filter>
     </ClInclude>
     <ClInclude Include="Macros.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineWindow.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ISimpRenderer.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Dx11Renderer.h">
+      <Filter>Rendering</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DebugHelper.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
     <ClCompile Include="stdafx.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="SimpEngine.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="InputLayer.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>Core</Filter>
     </ClCompile>
     <ClCompile Include="Timer.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpEngine.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="InputLayer.cpp">
+      <Filter>Input</Filter>
     </ClCompile>
     <ClCompile Include="EngineWindow.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="DebugHelper.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Dx11Renderer.cpp">
+      <Filter>Rendering</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
