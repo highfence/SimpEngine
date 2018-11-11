@@ -19,7 +19,7 @@ namespace SimpEngine
 		ConfigParamParser();
 		~ConfigParamParser();
 
-		void ParseParam(EngineConfig* config, std::wstring param);
+		void ParseParam(EngineConfig* config, std::wstring& param);
 
 	private :
 
@@ -32,7 +32,7 @@ namespace SimpEngine
 		using ParseFunctionList = std::unordered_map<ConfigParamName, ParseConfigFunction>;
 		ParseFunctionList m_ParseFunctions;
 
-		ConfigParamName GetConfigNameFromString(std::wstring paramString);
+		ConfigParamName GetConfigNameFromString(std::wstring& paramString);
 		std::wstring GetConfigNameToString(ConfigParamName configType);
 
 	};

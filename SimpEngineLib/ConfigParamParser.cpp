@@ -13,7 +13,7 @@ namespace SimpEngine
 	{
 	}
 
-	void ConfigParamParser::ParseParam(EngineConfig * config, std::wstring param)
+	void ConfigParamParser::ParseParam(EngineConfig * config, std::wstring& param)
 	{
 		if (config == nullptr)
 			return;
@@ -37,7 +37,7 @@ namespace SimpEngine
 		m_ParseFunctions.emplace(ConfigParamName::LogFilePath, std::bind(&ConfigParamParser::ParseLogFilePath, this, std::placeholders::_1, std::placeholders::_2));
 	}
 
-	void ConfigParamParser::ParseConfigFilePath(EngineConfig * config, std::wstring& paramValue)
+	void ConfigParamParser::ParseConfigFilePath(EngineConfig* config, std::wstring& paramValue)
 	{
 		if (config == nullptr)
 			return;
@@ -45,7 +45,7 @@ namespace SimpEngine
 		config->m_ConfigPath = paramValue;
 	}
 
-	void ConfigParamParser::ParseLogFilePath(EngineConfig * config, std::wstring& paramValue)
+	void ConfigParamParser::ParseLogFilePath(EngineConfig* config, std::wstring& paramValue)
 	{
 		if (config == nullptr)
 			return;
@@ -53,7 +53,7 @@ namespace SimpEngine
 		config->m_LogPath = paramValue;
 	}
 
-	ConfigParamName ConfigParamParser::GetConfigNameFromString(std::wstring paramString)
+	ConfigParamName ConfigParamParser::GetConfigNameFromString(std::wstring& paramString)
 	{
 		for (INT i = static_cast<int>(ConfigParamName::None); i < static_cast<int>(ConfigParamName::ConfigParamCount); ++i)
 		{

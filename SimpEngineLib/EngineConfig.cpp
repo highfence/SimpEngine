@@ -35,12 +35,15 @@ namespace SimpEngine
 	{
 		std::wstring configPath;
 
-		if (m_ConfigPath.length() <= 0)
+		if (m_ConfigPath.empty())
 			configPath = GetDefaultConfigPath();
 		else
 			configPath = m_ConfigPath;
 
 		// Todo : 여기서부터 작업합시다.
+		std::wstring buffer;
+
+
 	}
 
 	std::wstring EngineConfig::GetDefaultConfigPath()

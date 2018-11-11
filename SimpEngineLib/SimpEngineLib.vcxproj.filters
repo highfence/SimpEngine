@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Rendering">
-      <UniqueIdentifier>{78c93480-e827-42dd-ae89-fef69a377d62}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Debug">
       <UniqueIdentifier>{0b155db7-3bb5-47e2-842b-593990275c46}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core">
       <UniqueIdentifier>{c6b96655-e9b4-4579-a661-19afc11290e6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Input">
-      <UniqueIdentifier>{5f138e30-66d2-4afa-8ce4-48dcd994dac5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Utils">
       <UniqueIdentifier>{e382e057-55f4-4a0a-811e-083fdf90ac0e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Math">
+    <Filter Include="Core\Input">
+      <UniqueIdentifier>{5f138e30-66d2-4afa-8ce4-48dcd994dac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Math">
       <UniqueIdentifier>{cd90d261-e751-4fca-ba70-915411b1e14c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Config">
+    <Filter Include="Core\Rendering">
+      <UniqueIdentifier>{78c93480-e827-42dd-ae89-fef69a377d62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Config">
       <UniqueIdentifier>{ffd42c59-a54a-4198-80bd-94170bd5f3d6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -34,7 +34,7 @@
       <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="InputLayer.h">
-      <Filter>Input</Filter>
+      <Filter>Core\Input</Filter>
     </ClInclude>
     <ClInclude Include="DebugHelper.h">
       <Filter>Debug</Filter>
@@ -52,20 +52,21 @@
       <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="ISimpRenderer.h">
-      <Filter>Rendering</Filter>
+      <Filter>Core\Rendering</Filter>
     </ClInclude>
     <ClInclude Include="Dx11Renderer.h">
-      <Filter>Rendering</Filter>
+      <Filter>Core\Rendering</Filter>
     </ClInclude>
     <ClInclude Include="Vector.h">
-      <Filter>Math</Filter>
+      <Filter>Core\Math</Filter>
     </ClInclude>
     <ClInclude Include="EngineConfig.h">
-      <Filter>Config</Filter>
+      <Filter>Core\Config</Filter>
     </ClInclude>
     <ClInclude Include="ConfigParamParser.h">
-      <Filter>Config</Filter>
+      <Filter>Core\Config</Filter>
     </ClInclude>
+    <ClInclude Include="FileIOHelper.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DebugHelper.cpp">
@@ -81,22 +82,23 @@
       <Filter>Core</Filter>
     </ClCompile>
     <ClCompile Include="InputLayer.cpp">
-      <Filter>Input</Filter>
+      <Filter>Core\Input</Filter>
     </ClCompile>
     <ClCompile Include="EngineWindow.cpp">
       <Filter>Core</Filter>
     </ClCompile>
     <ClCompile Include="Dx11Renderer.cpp">
-      <Filter>Rendering</Filter>
+      <Filter>Core\Rendering</Filter>
     </ClCompile>
     <ClCompile Include="Vector.cpp">
-      <Filter>Math</Filter>
+      <Filter>Core\Math</Filter>
     </ClCompile>
     <ClCompile Include="EngineConfig.cpp">
-      <Filter>Config</Filter>
+      <Filter>Core\Config</Filter>
     </ClCompile>
     <ClCompile Include="ConfigParamParser.cpp">
-      <Filter>Config</Filter>
+      <Filter>Core\Config</Filter>
     </ClCompile>
+    <ClCompile Include="FileIOHelper.cpp" />
   </ItemGroup>
 </Project>
