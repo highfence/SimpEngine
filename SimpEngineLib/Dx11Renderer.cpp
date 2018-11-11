@@ -1,16 +1,15 @@
 #include "stdafx.h"
 #include "Dx11Renderer.h"
 
-namespace SimpEngineLib
+namespace SimpEngine
 {
 	Dx11Renderer::Dx11Renderer()
 	{
+		
 	}
 
 	Dx11Renderer::~Dx11Renderer()
 	{
-	}
-	void Dx11Renderer::Do()
-	{
+
 	}
 }

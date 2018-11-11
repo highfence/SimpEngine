@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "InputLayer.h"
 
-namespace SimpEngineLib
+namespace SimpEngine
 {
 	InputLayer::InputLayer()
 	{

@@ -1,14 +1,12 @@
 #pragma once
 
-namespace SimpEngineLib
+namespace SimpEngine
 {
 	class Dx11Renderer final : public ISimpRenderer
 	{
 	public:
 		Dx11Renderer();
 		~Dx11Renderer();
-
-		void Do() override;
 
 	private :
 	};

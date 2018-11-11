@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "EngineWindow.h"
 
-namespace SimpEngineLib
+namespace SimpEngine
 {
 	
 	EngineWindow::EngineWindow()

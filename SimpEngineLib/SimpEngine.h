@@ -3,7 +3,7 @@
 #include <memory>
 #include "Result.h"
 
-namespace SimpEngineLib
+namespace SimpEngine
 {
 	class Timer;
 	class EngineWindow;

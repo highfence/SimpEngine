@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "Timer.h"
 
-namespace SimpEngineLib
+namespace SimpEngine
 {
 	Timer::Timer()
 		: m_UseQPF(false), m_ElapsedTime(0.f), m_QPFTicksPerSec(0), m_LastElapsedTime(0)

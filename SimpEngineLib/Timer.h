@@ -1,6 +1,6 @@
 #pragma once
 
-namespace SimpEngineLib
+namespace SimpEngine
 {
 	// 필요한 기능만 구현된 타이머.
 	// 초기화 시에 InitTimer를 콜해주고,

@@ -1,6 +1,6 @@
 #pragma once
 
-namespace SimpEngineLib
+namespace SimpEngine
 {
 	class InputLayer
 	{

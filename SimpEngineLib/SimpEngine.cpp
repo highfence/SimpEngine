@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "SimpEngine.h"
 
-namespace SimpEngineLib
+namespace SimpEngine
 {
 	SimpEngine::SimpEngine(HINSTANCE hInstance, int cmdShow)
 		: m_WinInstance(hInstance), m_CmdShow(cmdShow)

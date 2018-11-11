@@ -2,7 +2,7 @@
 #include "DebugHelper.h"
 #include <intrin.h>
 
-namespace SimpEngineLib
+namespace SimpEngine
 {
 	std::wstring DebugHelper::GetResultName(SimpResult result)
 	{

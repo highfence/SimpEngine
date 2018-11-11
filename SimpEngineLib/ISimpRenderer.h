@@ -1,9 +1,8 @@
 #pragma once
 
-namespace SimpEngineLib
+namespace SimpEngine
 {
 	__interface ISimpRenderer
 	{
-		void Do() = 0;
 	};
 }

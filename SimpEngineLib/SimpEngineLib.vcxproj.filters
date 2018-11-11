@@ -51,6 +51,9 @@
     <ClInclude Include="Dx11Renderer.h">
       <Filter>Rendering</Filter>
     </ClInclude>
+    <ClInclude Include="EngineConfig.h">
+      <Filter>Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DebugHelper.cpp">
@@ -73,6 +76,9 @@
     </ClCompile>
     <ClCompile Include="Dx11Renderer.cpp">
       <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineConfig.cpp">
+      <Filter>Core</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
