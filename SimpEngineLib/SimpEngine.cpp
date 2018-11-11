@@ -1,4 +1,5 @@
 #include "stdafx.h"
+#include "EngineConfig.h"
 #include "SimpEngine.h"
 
 namespace SimpEngine

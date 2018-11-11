@@ -1,12 +1,20 @@
 #include "stdafx.h"
 #include "EngineConfig.h"
 
-
-EngineConfig::EngineConfig()
+namespace SimpEngine
 {
-}
+	EngineConfig::EngineConfig()
+	{
+	}
+
+	EngineConfig::~EngineConfig()
+	{
+	}
+
+	SimpResult EngineConfig::LoadConfig(std::string configPath)
+	{
 
 
-EngineConfig::~EngineConfig()
-{
+		return SimpResult::None;
+	}
 }

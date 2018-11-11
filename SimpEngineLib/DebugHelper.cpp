@@ -11,6 +11,9 @@ namespace SimpEngine
 		case SimpResult::None :
 			return std::wstring(TEXT("None"));
 
+		case SimpResult::ConfigFileDoNotExist :
+			return std::wstring(TEXT("Config file doesn't exist."));
+
 		default :
 			return std::wstring(TEXT("Undefined result enum"));
 		}

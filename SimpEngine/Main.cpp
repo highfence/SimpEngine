@@ -3,9 +3,7 @@
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdParam, int nCmdShow)
 {
-	using namespace SimpEngine;
-
-	SimpEngine engineInstance(hInstance, nCmdShow);
+	SimpEngine::SimpEngine engineInstance(hInstance, nCmdShow);
 	engineInstance.InitEngine();
 
 	return 0;

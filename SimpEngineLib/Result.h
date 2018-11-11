@@ -6,6 +6,8 @@ namespace SimpEngine
 	{
 		None = 0,
 
+		ConfigFileDoNotExist = 1,
+
 	};
 
 

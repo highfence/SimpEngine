@@ -7,5 +7,10 @@ namespace SimpEngine
 	public:
 		EngineConfig();
 		~EngineConfig();
+
+		SimpResult LoadConfig(std::string configPath);
+
+	private :
+
 	};
 }

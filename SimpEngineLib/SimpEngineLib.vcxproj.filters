@@ -16,6 +16,9 @@
     <Filter Include="Utils">
       <UniqueIdentifier>{e382e057-55f4-4a0a-811e-083fdf90ac0e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{cd90d261-e751-4fca-ba70-915411b1e14c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -54,6 +57,9 @@
     <ClInclude Include="EngineConfig.h">
       <Filter>Core</Filter>
     </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DebugHelper.cpp">
@@ -79,6 +85,9 @@
     </ClCompile>
     <ClCompile Include="EngineConfig.cpp">
       <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>Math</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
