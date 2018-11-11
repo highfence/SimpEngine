@@ -394,6 +394,6 @@ ASALocalRun/
 .localhistory/
 
 # Extern Files
-*/Extern/*
+./Extern/*
 
 # End of https://www.gitignore.io/api/c++,windows,visualstudio
