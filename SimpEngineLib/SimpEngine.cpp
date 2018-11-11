@@ -1,4 +1,5 @@
 #include "stdafx.h"
+#include <shellapi.h>
 #include "EngineConfig.h"
 #include "SimpEngine.h"
 
@@ -7,7 +8,6 @@ namespace SimpEngine
 	SimpEngine::SimpEngine(HINSTANCE hInstance, int cmdShow)
 		: m_WinInstance(hInstance), m_CmdShow(cmdShow)
 	{
-
 	}
 
 	SimpEngine::~SimpEngine()
@@ -16,14 +16,17 @@ namespace SimpEngine
 
 	SimpResult SimpEngine::InitEngine()
 	{
-		m_Timer = std::make_unique<Timer>();
-		m_Timer->InitTimer();
+		auto configInitResult = InitEngineConfig();
+		DebugHelper::CheckResult(configInitResult);
 
 		auto windowInitResult = InitEngineWindow();
 		DebugHelper::CheckResult(windowInitResult);
 
 		auto rendererInitResult = InitRenderer();
 		DebugHelper::CheckResult(rendererInitResult);
+
+		m_Timer = std::make_unique<Timer>();
+		m_Timer->InitTimer();
 
 		return SimpResult::None;
 	}
@@ -56,6 +59,26 @@ namespace SimpEngine
 				}
 			}
 		}
+	}
+
+	SimpResult SimpEngine::InitEngineConfig()
+	{
+		LPWSTR* argList;
+		int argCount;
+
+		argList = CommandLineToArgvW(GetCommandLine(), &argCount);
+
+		std::vector<std::wstring> args;
+		for (int i = 0; i < argCount; ++i)
+		{
+			if (argList[i] == nullptr)
+				continue;
+
+			args.push_back(argList[i]);
+		}
+
+		m_Config = std::make_unique<EngineConfig>();
+		return m_Config->LoadConfig(args);
 	}
 
 	SimpResult SimpEngine::InitEngineWindow()

@@ -24,6 +24,7 @@ namespace SimpEngine
 
 	private:
 
+		SimpResult InitEngineConfig();
 		SimpResult InitEngineWindow();
 		SimpResult InitRenderer();
 
