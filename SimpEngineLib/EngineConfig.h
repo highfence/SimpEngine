@@ -13,7 +13,7 @@ namespace SimpEngine
 		~EngineConfig();
 
 		using CommandParams = std::vector<std::wstring>;
-		SimpResult LoadConfig(CommandParams& params);
+		SimpResult LoadAllConfig(CommandParams& params);
 
 	private :
 
@@ -21,7 +21,7 @@ namespace SimpEngine
 		std::wstring m_LogPath;
 
 		void ParseCommandParams(CommandParams& params);
-		void LoadConfig();
+		SimpResult LoadBasicConfig();
 
 		std::wstring GetDefaultConfigPath();
 
