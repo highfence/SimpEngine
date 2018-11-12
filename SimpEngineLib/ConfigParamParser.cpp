@@ -42,17 +42,14 @@ namespace SimpEngine
 		if (config == nullptr)
 			return;
 
-		if (paramValue.empty() != false)
-			config->m_ConfigPath = paramValue;
-		else
-			config->m_ConfigPath = config->GetDefaultConfigPath();
+		config->m_ConfigPath = paramValue;
 	}
 
 	void ConfigParamParser::ParseLogFilePath(EngineConfig* config, std::wstring& paramValue)
 	{
 		if (config == nullptr)
 			return;
-		
+
 		config->m_LogPath = paramValue;
 	}
 

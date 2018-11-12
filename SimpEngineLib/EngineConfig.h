@@ -24,6 +24,7 @@ namespace SimpEngine
 		SimpResult LoadBasicConfig();
 
 		std::wstring GetDefaultConfigPath();
+		std::wstring GetDefaultLogPath();
 
 		std::unique_ptr<ConfigParamParser> m_ParamParser;
 	};

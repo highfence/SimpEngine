@@ -34,6 +34,9 @@ namespace SimpEngine
 
 	SimpResult EngineConfig::LoadBasicConfig()
 	{
+		if (m_ConfigPath.empty())
+			m_ConfigPath = GetDefaultConfigPath();
+
 		std::wstring configFileBuffer = FileIOHelper::GetFileBuffer(m_ConfigPath);
 		Json::Value root = Json::Value(configFileBuffer.data());
 
@@ -45,5 +48,10 @@ namespace SimpEngine
 	std::wstring EngineConfig::GetDefaultConfigPath()
 	{
 		return TEXT("../Config.json");
+	}
+
+	std::wstring EngineConfig::GetDefaultLogPath()
+	{
+		return TEXT("../Log/Log.log");
 	}
 }
