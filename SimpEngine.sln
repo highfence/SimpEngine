@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpEngine", "SimpEngine\Si
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpEngineLib", "SimpEngineLib\SimpEngineLib.vcxproj", "{D569F11B-43CB-41B4-9832-B63B3BBFE973}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpTest", "SimpTest\SimpTest.vcxproj", "{91719172-B32A-45F8-8540-4A108C451104}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{D569F11B-43CB-41B4-9832-B63B3BBFE973}.Release|x64.Build.0 = Release|x64
 		{D569F11B-43CB-41B4-9832-B63B3BBFE973}.Release|x86.ActiveCfg = Release|Win32
 		{D569F11B-43CB-41B4-9832-B63B3BBFE973}.Release|x86.Build.0 = Release|Win32
+		{91719172-B32A-45F8-8540-4A108C451104}.Debug|x64.ActiveCfg = Debug|x64
+		{91719172-B32A-45F8-8540-4A108C451104}.Debug|x64.Build.0 = Debug|x64
+		{91719172-B32A-45F8-8540-4A108C451104}.Debug|x86.ActiveCfg = Debug|Win32
+		{91719172-B32A-45F8-8540-4A108C451104}.Debug|x86.Build.0 = Debug|Win32
+		{91719172-B32A-45F8-8540-4A108C451104}.Release|x64.ActiveCfg = Release|x64
+		{91719172-B32A-45F8-8540-4A108C451104}.Release|x64.Build.0 = Release|x64
+		{91719172-B32A-45F8-8540-4A108C451104}.Release|x86.ActiveCfg = Release|Win32
+		{91719172-B32A-45F8-8540-4A108C451104}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

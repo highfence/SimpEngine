@@ -66,7 +66,9 @@
     <ClInclude Include="ConfigParamParser.h">
       <Filter>Core\Config</Filter>
     </ClInclude>
-    <ClInclude Include="FileIOHelper.h" />
+    <ClInclude Include="FileIOHelper.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DebugHelper.cpp">
@@ -99,6 +101,8 @@
     <ClCompile Include="ConfigParamParser.cpp">
       <Filter>Core\Config</Filter>
     </ClCompile>
-    <ClCompile Include="FileIOHelper.cpp" />
+    <ClCompile Include="FileIOHelper.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
