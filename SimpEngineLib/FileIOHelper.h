@@ -6,6 +6,6 @@ namespace SimpEngine
 	{
 	public:
 
-		static std::wstring GetFileBuffer(std::wstring& filePath);
+		static std::wstring GetFileBuffer(const std::wstring& filePath);
 	};
 }

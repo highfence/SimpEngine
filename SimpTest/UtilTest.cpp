@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
+#include "../SimpEngineLib/FileIOHelper.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -9,10 +10,23 @@ namespace SimpTest
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		const std::wstring successFilePath = TEXT("../SimpTest/TestDatas/Test.json");
+		const std::wstring failFilePath = TEXT("./TestDatas/dontExist.data");
+		
+		TEST_METHOD(FileOpenFailTest)
 		{
-			// TODO: 테스트 코드를 여기에 입력합니다.
+			std::wstring fileBuf = SimpEngine::FileIOHelper::GetFileBuffer(failFilePath);
+			int fileLength = fileBuf.length();
+			
+			Assert::AreEqual(fileLength, 0);
 		}
 
+		TEST_METHOD(FileOpenSuccessTest)
+		{
+			std::wstring fileBuf = SimpEngine::FileIOHelper::GetFileBuffer(successFilePath);
+			int fileLength = fileBuf.length();
+
+			Assert::AreNotEqual(fileLength, 0);
+		}
 	};
 }

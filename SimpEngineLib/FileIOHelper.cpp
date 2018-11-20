@@ -3,13 +3,13 @@
 
 namespace SimpEngine
 {
-	std::wstring FileIOHelper::GetFileBuffer(std::wstring& filePath)
+	std::wstring FileIOHelper::GetFileBuffer(const std::wstring& filePath)
 	{
 		wchar_t* buffer;
 		std::wifstream fileStream(filePath);
 
 		if (fileStream.is_open() == false)
-			return buffer;
+			return std::wstring(TEXT(""));
 
 		fileStream.seekg(0, std::ios::end);
 		auto fileLength = fileStream.tellg();

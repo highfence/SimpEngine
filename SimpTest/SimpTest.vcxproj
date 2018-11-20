@@ -164,6 +164,11 @@
     </ClCompile>
     <ClCompile Include="UtilTest.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpEngineLib\SimpEngineLib.vcxproj">
+      <Project>{d569f11b-43cb-41b4-9832-b63b3bbfe973}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
