@@ -78,7 +78,7 @@ namespace SimpEngine
 		}
 
 		m_Config = std::make_unique<EngineConfig>();
-		return m_Config->LoadConfig(args);
+		return m_Config->LoadAllConfig(args);
 	}
 
 	SimpResult SimpEngine::InitEngineWindow()

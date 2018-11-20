@@ -49,7 +49,7 @@ namespace SimpEngine
 	{
 		if (config == nullptr)
 			return;
-		
+
 		config->m_LogPath = paramValue;
 	}
 

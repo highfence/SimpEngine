@@ -11,8 +11,8 @@ namespace SimpEngine
 		case SimpResult::None :
 			return std::wstring(TEXT("None"));
 
-		case SimpResult::ConfigFileDoNotExist :
-			return std::wstring(TEXT("Config file doesn't exist."));
+		case SimpResult::ConfigFileOpenFailed :
+			return std::wstring(TEXT("Can't open config file."));
 
 		default :
 			return std::wstring(TEXT("Undefined result enum"));
@@ -21,18 +21,18 @@ namespace SimpEngine
 
 	void DebugHelper::CheckResult(SimpResult result)
 	{
-		if (result != SimpResult::None)
-		{
-			std::wstring resultName = GetResultName(result);
-			std::wstring boxText = TEXT("Error! Result : ");
-			boxText.append(resultName);
+		if (result == SimpResult::None)
+			return;
 
-			const TCHAR* errorMsg = boxText.c_str();
-			const TCHAR* caption = TEXT("Error!");
+		std::wstring resultName = GetResultName(result);
+		std::wstring boxText = TEXT("Error! Result : ");
+		boxText.append(resultName);
 
-			MessageBox(NULL, errorMsg, caption, MB_OK);
+		const TCHAR* errorMsg = boxText.c_str();
+		const TCHAR* caption = TEXT("Error!");
 
-			__debugbreak();
-		}
+		MessageBox(NULL, errorMsg, caption, MB_OK);
+
+		__debugbreak();
 	}
 }
